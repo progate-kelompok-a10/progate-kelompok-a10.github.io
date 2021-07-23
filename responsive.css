@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+/*tampilan responsif untuk laptop ukuran 1200px ke bawah*/
+@media (max-width: 1200px) {
+  /*tampilan responsif untuk bagian footer di bagian info*/
+  footer .info{
+    display:  flex;
+    width:  100%;
+  }
+}
+
+
+/* file responsive - Izmilia Prastika */
+
+/*tampilan responsif untuk laptop ukuran 1000px ke bawah */
+@media (max-width: 1000px) {  
+  /*tampilan responsif untuk bagian footer di bagian info*/
+  footer .info{
+    width:  100%;
+  }
+}
+
+
+/*tampilan responsif untuk tablet ukuran 800px ke bawah */
+@media (max-width: 800px) {
+  body {
+    width: 75%;
+  }
+
+  /* Styling menu-icon Izmilia Prastika'
+Berfungsi untuk memunculkan icon 'burger'
+sebagai pengganti menu nav-link
+untuk ukuran layar 670px ke bawah */
+  .menu-icon {
+    display:  none;
+  }
+
+  /*ubah ukuran tombol Jelajah jadi kecilan,
+   sehingga tampilan smartphone
+  lebih responsif
+  */
+  .jumbotron .main-btn {
+    font-size: 14px;
+    padding: 8px 25px;
+    background-color: #ff9050;
+    border: 1.5px solid #ff9050;
+    border-radius: 35px;
+    margin-right: 30px;
+  }
+
+  /*ubah ukuran tombol Pesan Tiket
+  jadi kecilan, sehingga tampilan smartphone
+  lebih responsif
+  */
+  .jumbotron .btn {
+    font-size: 10px;
+    padding: 8px 25px;
+    border: 1.5px solid #ff9050;
+    border-radius: 35px;
+    margin-right: 30px;
+  }
+
+  .jumbotron p {
+    font-size: 20px;
+  }
+
+   /*tampilan responsif untuk bagian main */
+  main {
+    width: 75%;
+  }
+
+  /*tampilan responsif untuk bagian footer di bagian info*/
+  footer .info{
+    width:  100%;
+  }
+  
+  .info-content p {
+    font-size: 13px;
+  }
+}
+
+
+/*tampilan responsif untuk smartphone ukuran 600px ke bawah */
+@media (max-width: 680px) {
+  body {
+    width: 50%;
+  }
+
+  /*Fungsinya untuk memperkecil ukuran container
+  pada ukuran smartphone, sehingga tampil responsif */
+  header {
+    width: 50%;
+    font-size: 12px;
+  }
+  
+  /* Styling mav-link Izmilia Prastika'
+Berfungsi untuk menghilangkan tampilan menu header
+untuk ukuran layar 670px ke bawah */
+  .nav-link {
+    display:  none;
+  }
+
+
+  /* Styling menu-icon Izmilia Prastika'
+Berfungsi untuk memunculkan icon 'burger'
+sebagai pengganti menu nav-link
+untuk ukuran layar 670px ke bawah */
+  .menu-icon {
+    display:  block;
+  }
+
+  /*ubah ukuran tombol Jelajah jadi kecilan,
+   sehingga tampilan smartphone
+  lebih responsif
+  */
+  .jumbotron .main-btn {
+    font-size: 10px;
+    padding: 5px 15px;
+    background-color: #ff9050;
+    border: 1px solid #ff9050;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*ubah ukuran tombol Pesan Tiket
+  jadi kecilan, sehingga tampilan smartphone
+  lebih responsif
+  */
+  .jumbotron .btn {
+    font-size: 10px;
+    padding: 5px 15px;
+    border: 1px solid #ff9050;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+
+  .jumbotron p {
+    font-size: 16px;
+  }
+
+  /*tampilan responsif untuk bagian footer di bagian info*/
+  .info-content p {
+    text-align: center;
+    font-size: 10px;
+  }
+
+
+  /*tampilan responsif untuk bagian main */
+  main {
+    width: 50%;
+  }
+
+  footer .info{
+    flex-wrap:  wrap;
+  }
+
+  /*Ubah ukuran font bagian info-content
+  agar huruf tidak kebesaran untuk ukuran
+  smartphone*/
+  .info-content p{
+    width:  100%;
+    font-size:  7px;
+  }
+
+  .clear {
+    clear: left;
+  }
+}

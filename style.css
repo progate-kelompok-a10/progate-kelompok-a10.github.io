@@ -1,0 +1,439 @@
+/*
+    Styling Header - Candi Agusta
+*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+header {
+	background-image: url('./borobudur.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 500px;
+	position: relative;
+	color: white;
+}
+
+header::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	opacity: 0.7;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+nav {
+	padding: 5px 0;
+}
+
+.header-socmed {
+	display: flex;
+	justify-content: end;
+}
+
+.header-socmed i {
+	color: black;
+	background-color: aliceblue;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 15px;
+	opacity: 0.7;
+	margin-right: 5px;
+}
+
+.header-socmed i:hover {
+	opacity: 1;
+}
+
+.header-socmed div {
+	display: inline;
+	padding: 5px;
+	border: 1px solid white;
+	font-size: 0.8em;
+	opacity: 0.7;
+}
+
+.nav-items {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: rgb(189, 189, 189);
+	opacity: 0.5;
+	margin-top: 3px;
+}
+
+.nav-link {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-links {
+	display: inline-block;
+	transition: all 0.2s;
+}
+
+.nav-links:hover {
+	color: #ff9050;
+}
+
+.active {
+	color: #ff9050;
+	position: relative;
+}
+
+.active::after {
+	content: '';
+	display: block;
+	background-color: #ff9050;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: -3px;
+}
+
+.jumbotron {
+	margin-top: 80px;
+}
+
+.jumbotron h1 {
+	font-weight: 900;
+	font-size: 3em;
+}
+
+.jumbotron p {
+	padding: 20px 0;
+	font-size: 1.1em;
+	color: #aeafae;
+}
+
+.jumbotron a {
+	display: inline-block;
+	transition: all 0.2s;
+}
+.main-btn {
+	padding: 10px 40px;
+	background-color: #ff9050;
+	border: 2px solid #ff9050;
+	border-radius: 50px;
+	margin-right: 40px;
+}
+
+.main-btn:hover {
+	background-color: #faae83;
+	border-color: #faae83;
+}
+
+.btn {
+	padding: 10px 30px;
+	border: 2px solid #ff9050;
+	border-radius: 50px;
+	margin-right: 40px;
+}
+
+.btn:hover {
+	background-color: #ff9050;
+}
+
+.buttons {
+	margin-top: 10px;
+}
+
+.fa-angle-down {
+	padding: 10px 13px;
+	background-color: #ff9050;
+	position: absolute;
+	z-index: 100;
+	border-radius: 20px;
+	bottom: -20px;
+	left: 50%;
+	cursor: pointer;
+	transform: translateX(-50%);
+}
+
+.fa-angle-down:hover {
+	background-color: #faae83;
+}
+
+.navbar {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #aaa;
+	z-index: 1000;
+	top: -1000px;
+	transition: all 0.3s;
+}
+
+.dancing-font {
+	color: #ff9050;
+	font-family: 'Dancing Script', cursive;
+}
+
+main {
+	margin: 70px 0;
+}
+
+.main-1 {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.box-1 {
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box-image {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.box-image img {
+	width: 100%;
+}
+
+.box-image-2 {
+	width: 50%;
+}
+
+.box-image-2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.box-2 {
+	width: 45%;
+}
+
+.box-2 h1:nth-child(2) {
+	text-transform: uppercase;
+}
+
+.event-a {
+	margin: 40px 0;
+}
+
+.event-b {
+	margin: 40px 0 60px 0;
+}
+/*
+    Styling Body Main - Angga Abriansyah
+*/
+
+/*
+    Styling Footer - M Syarif Hidayatullah
+*/
+
+footer {
+	padding: 30px 50px;
+	/*styling background color - Izmilia Prastika
+  biar warnanya jadi senada sama warna container */
+	background-color: #b2bfce;
+	color: black;
+	text-align: center;
+}
+
+footer img {
+	width: 100px;
+}
+footer .info {
+	padding: 30px 0;
+}
+.info-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+
+.info-content p {
+	display: block;
+	width: 30%;
+}
+
+.sosmed {
+	opacity: 0.8;
+	letter-spacing: 15px;
+	margin-bottom: 30px;
+}
+
+/*styling animasi ubah warna hover icon socmed - Izmilia Prastika
+  warnanya abu-abu dan bayangannya berubah jd bulat */
+footer .fa-instagram:hover {
+	opacity: 1;
+	width: 15px;
+	height: 18px;
+	border-radius: 20px;
+	background-color: #99a4b0;
+}
+
+footer .fa-twitter:hover {
+	opacity: 1;
+	width: 15px;
+	height: 18px;
+	border-radius: 20px;
+	background-color: #99a4b0;
+}
+
+footer .fa-facebook:hover {
+	opacity: 1;
+	width: 15px;
+	height: 18px;
+	border-radius: 20px;
+	background-color: #99a4b0;
+}
+
+footer .fa-google-plus:hover {
+	opacity: 0.5;
+	width: 15px;
+	height: 18px;
+	border-radius: 20px;
+	background-color: #99a4b0;
+}
+
+/* Styling menu-icon Izmilia Prastika'
+Berfungsi untuk menghilangkan tampilan menu header
+untuk ukuran layar 670px ke bawah */
+.menu-icon {
+	color: white;
+	font-size: 25px;
+	/* Gantikan property display ke none */
+	display: none;
+	transform: scale(0);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+	nav {
+		padding: 0;
+	}
+
+	.header-socmed {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.nav-items {
+		margin-top: 0;
+		padding: 0px 10px;
+	}
+
+	.nav-icon {
+		width: 100px;
+	}
+
+	.nav-items img {
+		width: 100%;
+		object-fit: contain;
+	}
+
+	.nav-link {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+		transform: scale(1);
+	}
+
+	.jumbotron {
+		margin-top: 70px;
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	.jumbotron .main-btn {
+		margin-right: 0;
+	}
+
+	.jumbotron .btn {
+		margin-right: 0;
+		margin-top: 0;
+	}
+
+	.jumbotron a {
+		display: block;
+	}
+
+	.jumbotron h1 {
+		font-size: 2em;
+	}
+
+	.jumbotron p {
+		font-size: 1em;
+	}
+
+	.main-1 {
+		display: flex;
+	}
+
+	.box-1,
+	.box-2 {
+		width: 100%;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.navbar .fa-times {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+	.navbar-active {
+		top: 0;
+	}
+}
